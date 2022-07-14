@@ -22,7 +22,7 @@ export const usePokemons = () => {
         if ( !pokemon.value ) return;
 
         if( selectedId === pokemon.value.id ) {
-            pokemonStore.showPokemonAndAnswer(`Felicidades está correctp, ${ pokemon.value.name }`);
+            pokemonStore.showPokemonAndAnswer(`Felicidades está correcto es: ${ pokemon.value.name }`);
         } else {
             pokemonStore.showPokemonAndAnswer(`Te has equivocado la respuesta era: ${ pokemon.value.name }`);
         }
